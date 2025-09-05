@@ -1,50 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Single Price Grid Component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Join our community
+    <title>Frontend Mentor | Single Price Grid Component</title>
 
-  30-day, hassle-free money back guarantee
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="./fonts/karla-v32-latin-700.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="./fonts//karla-v32-latin-regular.woff2"
+      crossorigin
+    />
 
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
-
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 id="single-price-grid" class="visually-hidden">Sample Single Price Grid Component</h1>
+      <section class="price-grid" aria-labelledby="single-price-grid">
+        <div class="header">
+          <h2 class="header__title">Join our community</h2>
+          <strong class="header__highlight">30-day, hassle-free money back guarantee</strong>
+          <p class="header__description"0>
+            Gain access to our full library of tutorials along with expert code
+            reviews. Perfect for any developers who are serious about honing
+            their skills.
+          </p>
+        </div>
+        <div class="subscription">
+          <h3 class="subscription__title">Monthly Subscription</h3>
+          <p class="subscription__price"><strong class="subscription__price-highlight">&dollar;29</strong>per month</p>
+          <p class="subscription__feature">Full access for less than &dollar;1 a day</p>
+          <a class="subscription__link"href="#">Sign Up</a>
+        </div>
+        <div class="why">
+          <h3 class="why__title">Why Us</h3>
+          <ul class="why__list">
+            <li class="why__list-item">Tutorials by industry experts</li>
+            <li class="why__list-item">Peer &amp; expert code review</li>
+            <li class="why__list-item">Coding exercises</li>
+            <li class="why__list-item">Access to our GitHub repos</li>
+            <li class="why__list-item">Community forum</li>
+            <li class="why__list-item">Flashcard decks</li>
+            <li class="why__list-item">New videos every week</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
